@@ -5,12 +5,12 @@ Tutorial on Large Scale Data Analytics - SciPy US 2021
 
 ### Date: July 13th from 2 to 6pm CDT
 
-## SciPy US 2021
+## PyCon APAC 2021
 
-Welcome to ___(D)Ask Me Anything About Data Analytics at Scale___, a SciPy US 2021 tutorial where we will be learning about how to conduct exploratory data analysis at scale, how to create dashboards with data that does not fit in memory, and how to do hypothesis testing.
+Welcome to **Pipelines 4 All - From Data Engineering to Machine Learning**, a SciPy US 2021 tutorial where we will be learning about how to conduct exploratory data analysis at scale, how to create dashboards with data that does not fit in memory, and how to do hypothesis testing.
 
 
-**Please download the data and notebooks and set up your environment before the tutorial, and please let me know through email or slack if you have any issues with anything.**
+**Please download the data and notebooks and set up your environment before the tutorial, and please let me know through email or slack if you have any issues with set up.**
 
 # Table of Contents
 
@@ -36,41 +36,33 @@ Run this tutorial on Binder
 ## 1. Outline for the Tutorial
 
 The time budgeted for this tutorial is about 3.5 hours including breaks. We will follow, as best as possible, the following schedule.
-1. **Introduction and Setup | 2:00 - 2:30 (Central/US)**
-   - Getting the environment set up. We will be using Jupyter Lab and some of the libraries in the Python scientific stack throughout the tutorial. If you experience any difficulties getting fully setup for the lessons ahead, please let me know as soon as possible. Otherwise, I know that having zoom and using all of the cores in your machine can make things slow down quite dramatically, and because of this, you can also access all of the content for the session through Binder using the link above and we can work on your setup during the break.
-	 - Presentation including
-		 - A breakdown of the session
-		 - Exploratory Data Analysis
-		 - Questions to be Tackled
-		 - Hypothesis Testing
-		 - Dashboards
-		 - Intro to the tools for the session
-2. **Flash Intro to Dask | 2:30 - 2:50 (Central/US)**
-	- In this section, we will cover some of the basic building blocks for working with dask dataframes.
-3. **10-minute break**
-4. **Exploratory Data Analysis | 3:00 - 3:45 (Central/US)**
-   - Questions and Answers
-   - EDA Breakdown
-	   - Analysis and
-	   - Visualisations
-   - Exercise (10-min)
-5. **15-minute break**
-6. **Hypothesis Testing | 4:00 - 4:40 (Central/US)**
-   - The Dashboard
-   - Scenario
-   - Use Cases
+Total time budgeted including breaks - 3.5 hours
+
+1. **Introduction and Setup (~10 minutes)**
+   - Getting the environment set up. We will be using Jupyter Lab throughout but participants experiencing difficulties throughout the session will also have the option to walk through the tutorial using Binder
+   - Quick breakdown of the session
+   - Flash instructor intro
+2. **Data Engineering Pipelines (~40 minutes)**
+   - Intro to the datasets
+   - ETL Pipeline Breakdown
    - Exercise (7-min)
-7. **10-minute break**
-8. **Dashboards | 4:50 - 5:40 (Central/US)**
-	-  Interactive dashboard overview
-	-  Datashader and Holoviews overview
-	-  Top-Down Interactive Dashboard Breakdown
-	-  Exercises (10-min). For these exercises, you will be given a dashboard with 3-5 visualizations as well as the dataset, and your task is to reverse engineer any of the visualizations in the dashboard using Dask, datashader, and holoviews
+3. **10-minute break**
+4. **Data Analytic Pipelines (~50 minutes)**
+   - Intro to the dataset
+   - Interactive dashboard creation and customisation
+   - Dashboard, main functions breakdown, and pipeline creation
+   - Exercise (7-min)
+5. **10-minute break**
+6. **Machine Learning Pipelines (~50 minutes)**
+   - Intro to the dataset
+   - ML Pipelines breakdown
+   - Model development
+   - Exercise (7-min)
 
 
 ## 2. Prerequisites (P) and Good To Have's (GTH)
 
-The target audience for this session includes analysts of all levels, developers, data scientists, and engineers wanting to learn how to analyze large amounts of data that don’t fit into the memory RAM of their computers.
+The target audience for this session includes analysts of all levels, developers, data scientists, and engineers wanting to learn how to different kinds of pipelines for their workflows.
 
 The tutorial is at the intermediate level and the following are some of the Prerequisites (P) and Good To Have's (GTH)
 
