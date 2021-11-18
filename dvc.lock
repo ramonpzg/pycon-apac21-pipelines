@@ -1,0 +1,58 @@
+schema: '2.0'
+stages:
+  get_data:
+    cmd: python src/full_pipe/get_data.py
+    deps:
+    - path: src/full_pipe/get_data.py
+      md5: fb2b1aff945e9ff20e602641f9516846
+      size: 314
+    outs:
+    - path: data/03_part/raw/SeoulBikeData.csv
+      md5: 4ec879231f9c38e97dd87049bdb61c18
+      size: 604166
+  prepare:
+    cmd: python src/full_pipe/prepare.py data/03_part/raw/SeoulBikeData.csv
+    deps:
+    - path: data/03_part/raw/SeoulBikeData.csv
+      md5: 4ec879231f9c38e97dd87049bdb61c18
+      size: 604166
+    - path: src/full_pipe/prepare.py
+      md5: 6054d7cc359fd9a55412c69eee002bbf
+      size: 1884
+    outs:
+    - path: data/03_part/processed/test.csv
+      md5: c3ca17165261e8f7c774830679fb214a
+      size: 293728
+    - path: data/03_part/processed/train.csv
+      md5: e93c2fcb71acde3a12bd1ef5760b4c68
+      size: 678953
+  train:
+    cmd: python src/full_pipe/train.py data/03_part/processed/train.csv
+    deps:
+    - path: data/03_part/processed/train.csv
+      md5: e93c2fcb71acde3a12bd1ef5760b4c68
+      size: 678953
+    - path: src/full_pipe/train.py
+      md5: b8e75d92d8b5288c5ac966924db3e32d
+      size: 444
+    outs:
+    - path: models/rf_model.pkl
+      md5: d9fa5e8e35c8b750ff3154e2538a15e8
+      size: 48246224
+  evaluate:
+    cmd: python src/full_pipe/evaluate.py models/rf_model.pkl data/03_part/processed
+    deps:
+    - path: data/03_part/processed
+      md5: cc21e308fdc645547b60cb932463db5b.dir
+      size: 972702
+      nfiles: 3
+    - path: models/rf_model.pkl
+      md5: d9fa5e8e35c8b750ff3154e2538a15e8
+      size: 48246224
+    - path: src/full_pipe/evaluate.py
+      md5: 4341984866fbd362b3622cbea48ccb44
+      size: 698
+    outs:
+    - path: metrics/metrics.json
+      md5: b715380ee2bc0dda3fd65b4423f9233f
+      size: 92
