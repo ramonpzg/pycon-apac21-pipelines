@@ -4,3 +4,10 @@ data/01_part/raw/wash_dc/hour.csv
 data/01_part/raw/london/london_merged.csv
 data/01_part/raw/porto/
 iterative_challenge-master/
+notebooks/00_presentation.ipynb
+notebooks/00_presentation.slides.html
+notebooks/02_analytical_pipes.ipynb
+notebooks/03_statistical_pipes.ipynb
+notebooks/04_dvc_pipes.ipynb
+notebooks/testing.py
+data/02_part/external/
