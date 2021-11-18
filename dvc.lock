@@ -33,12 +33,12 @@ stages:
       md5: e93c2fcb71acde3a12bd1ef5760b4c68
       size: 678953
     - path: src/full_pipe/train.py
-      md5: b8b79ae4e06d4e9feb567de8b0c38cd1
-      size: 390
+      md5: b8e75d92d8b5288c5ac966924db3e32d
+      size: 444
     outs:
     - path: models/rf_model.pkl
-      md5: b891791f30a41a8c21630389ffb11439
-      size: 661037
+      md5: d9fa5e8e35c8b750ff3154e2538a15e8
+      size: 48246224
   evaluate:
     cmd: python src/full_pipe/evaluate.py models/rf_model.pkl data/03_part/processed
     deps:
@@ -47,12 +47,12 @@ stages:
       size: 972702
       nfiles: 3
     - path: models/rf_model.pkl
-      md5: b891791f30a41a8c21630389ffb11439
-      size: 661037
+      md5: d9fa5e8e35c8b750ff3154e2538a15e8
+      size: 48246224
     - path: src/full_pipe/evaluate.py
       md5: 4341984866fbd362b3622cbea48ccb44
       size: 698
     outs:
     - path: metrics/metrics.json
-      md5: 180d3b3d36be48f447fa2b4a884ee052
-      size: 95
+      md5: b715380ee2bc0dda3fd65b4423f9233f
+      size: 92
