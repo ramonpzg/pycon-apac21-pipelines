@@ -9,3 +9,4 @@ notebooks/00_presentation.slides.html
 notebooks/02_analytical_pipes.ipynb
 notebooks/testing.py
 data/02_part/external/
+catboost_info/
