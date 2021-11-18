@@ -16,7 +16,7 @@ jobs:
           pip install -r requirements.txt
           
           dvc repro
-          dvc push
+          # dvc push
 
           echo "# CML Report" > report.md
           dvc metrics diff --show-md master >> report.md
