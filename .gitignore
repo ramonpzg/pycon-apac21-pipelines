@@ -1,1 +1,6 @@
 .ipynb_checkpoints/
+data/01_part/raw/wash_dc/day.csv
+data/01_part/raw/wash_dc/hour.csv
+data/01_part/raw/london/london_merged.csv
+data/01_part/raw/porto/
+iterative_challenge-master/
