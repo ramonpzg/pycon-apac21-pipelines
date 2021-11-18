@@ -4,7 +4,6 @@ channels:
   - defaults
 dependencies:
   - bokeh=2.4.1
-  - bokeh=2.4.0
   - holoviews=1.14.6
   - hvplot=0.7.3
   - jupyterlab=3.1.13
@@ -23,12 +22,11 @@ dependencies:
   - yaml=0.2.5
   - pip:
     - dask==2021.9.1
-    - graphviz
     - prefect==0.15.9
     - pyarrow==6.0.0
-    - python-graphviz==0.18.1
     - streamlit==1.2.0
     - scikit-learn
     - xgboost
     - lightgbm
     - catboost
+    - dvc
