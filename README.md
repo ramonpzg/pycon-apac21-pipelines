@@ -7,7 +7,7 @@ Tutorial on Large Scale Data Analytics - SciPy US 2021
 
 ## PyCon APAC 2021
 
-Welcome to **Pipelines 4 All - From Data Engineering to Machine Learning**, a SciPy US 2021 tutorial where we will be learning about how to conduct exploratory data analysis at scale, how to create dashboards with data that does not fit in memory, and how to do hypothesis testing.
+Welcome to **Pipelines 4 All - From Data Engineering to Machine Learning**, a PyCon APAC 2021 tutorial where we will be learning about how to conduct exploratory data analysis at scale, how to create dashboards with data that does not fit in memory, and how to do hypothesis testing.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ramonpzg/pycon-apac21-pipelines/master)
 
